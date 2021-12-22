@@ -1,4 +1,4 @@
-![](./OIP.jpg)
+![](../images/OIP.jpg)
 
 ## 1. What is Blockchain ?
 Blockchain ia a system of recording information in a way that makes it difficut or impossible to change , hack or cheat the system. a blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer system on the blockchain.
@@ -10,7 +10,7 @@ Blockchain helps in the verification and traceability of multistep transactions 
 
 the byzantine generals problem is a game theory , which describes the difficulty decentralized parties have in arriving at consensus without relying on a trusted central party. in a network where no member can verify the identity of other members, how can members ,  how can members collectively agree on a certain truth.
 
-![](./Bzyntine.png)
+![](../images/Bzyntine.png)
 
 
 ## 3. What is Consensus ? 
@@ -22,7 +22,7 @@ It is basically the agreement on a single data value or a single state of the ne
 2. POS
 3. DPOS,DPS
 
-![](./Comparison-between-consensus-algorithms.png)
+![](../images/Comparison-between-consensus-algorithms.png)
 
 ###  i) POW
 The algorithm is used to confirm the transaction secure and creates a new block to chain . in this algorithm minors (group of peoples) compete the transaction on the network. as soon valid block created by the minors it get into the ledger
@@ -122,3 +122,73 @@ SHA-256 is a patented cryptographic hash function that outputs a value that is 2
     #### Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. Get Solidity stack traces & console. log. Actions. Packages
 
 differences between the above technologies (eg, hardhat vs brownie, web3.py vs truffle, solidity vs viper)
+
+## differences between truffle vs brownie ?
+
+One such popular framework for writing dApps using the Solidity programming language is Truffle. Truffle provides a basic scaffolding to design dApp projects. Using Truffle, we can create the smart contracts required to create the blockchain functionality, write unit tests for the functions, and design the front-end design of the dApp.
+
+Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.
+
+
+## differences between web3.py vs hardhat ? 
+
+Ape is a framework for Web3 Python applications and smart contracts, with advanced functionality for testing, deployment, and on-chain interactions.
+
+
+Hardhat comes built-in with Hardhat Network, a local Ethereum network node designed for development, akin to Ganache, geth --dev, etc. It allows you to deploy your contracts, run your tests and debug your code. How does it work? It runs as either an in-process or stand-alone daemon, servicing JSON-RPC and WebSocket requests.
+
+
+## differences between solidity vs viper ?
+
+Solidity is a contract-oriented, high-level programming language for implementing smart contracts. Solidity is highly influenced by C++, Python and JavaScript and has been designed to target the Ethereum Virtual Machine (EVM). This tutorial targets novice developers and those new to Solidity.
+
+Viper is a binary analysis and management framework. Its fundamental objective is to provide a solution to easily organize your collection of malware and exploit samples as well as your collection of scripts you created or found over the time to facilitate your daily research.
+
+## What is Hash?
+
+![](../images/hash-2.jpg)
+
+hash look like a bunch of random number essentially what it is it's a digital finger print if some digital data and it just so happens its a fingerprint of whatever you type in the box .
+
+
+## What is Block?
+
+![](../images/block.jpg)
+![](../images/block-2.jpg)
+
+it's exactly like a hash its just tha data section  i've  broken out now into three sections  one called block this is just some kind of a number 
+like block no. 1 a nonce which is just yet another number will go into what that is in a second and then just some more data just very similarly to the way that we had it before however the hash of this which includes all of this information up here is down here and its begins with four zeros you see that is a relatively unsual has you know most of them are not really going to start wih four zeros like thats but this one happens to and because it does totally arbitrarily i'm going to say that this block is signed 
+
+## What is Distribution?
+
+![](../images/distribution.jpg)
+![](../images/distribution-2.jpg)
+
+
+## What is Tokens?
+
+A cryptographic token represents rules on a blockchain. Smart Contracts encrypt them. Each token belongs to a blockchain address. With your wallet, you can use your token. That means, only if you have the private key for the address of the token, you can use it. The token makes you the owner.
+
+money-transfer
+![](../images/token.jpg)
+
+A blockchain token can represent an asset. So if you want to hand over an asset on the blockchain, you only have to sign the token with your private key and send it to the other person. As a result, the ownership of the property has changed.
+
+A token can also represent an access right. So you can get access by signing with your private key. For example, if you want to use software, you only need the token and sign the access with your private key.
+
+## What is Coinbase?
+
+![](../images/coinbase.jpg)
+invent money from eth and give it to someone
+
+Coinbase is a secure online platform for buying, selling, transferring, and storing digital currency. Our mission is to create an open financial system for the world and to be the leading global brand for helping people convert digital currency into and out of their local currency.
+
+We make buying and selling digital currency easy.
+
+Sending or receiving digital currency between online wallets, friends, or merchants on Coinbase is free!*
+
+We handle security and backups so you don't have to worry.
+
+We are a "one stop shop" - we offer a wallet, an exchange, and merchant tools within one simple interface.
+
+Coinbase is a platform on which many applications are being built using our API.
