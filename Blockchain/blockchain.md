@@ -200,7 +200,7 @@ Coinbase is a platform on which many applications are being built using our API.
 
 ### State Variables 
 
-state varisble are variables whose values are permanently stored in contract storage.
+state variable are variables whose values are permanently stored in contract storage.
 
 1. uint (unassigned integer)
 2. uint256
