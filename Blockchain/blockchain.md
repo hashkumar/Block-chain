@@ -192,3 +192,154 @@ We handle security and backups so you don't have to worry.
 We are a "one stop shop" - we offer a wallet, an exchange, and merchant tools within one simple interface.
 
 Coinbase is a platform on which many applications are being built using our API.
+
+
+#  Solidity (Smart-Contract)
+
+## basic terminologies
+
+### State Variables 
+
+state varisble are variables whose values are permanently stored in contract storage.
+
+uint (unassigned integer)
+uint256
+int
+bool
+address
+string
+const
+
+### functions 
+
+function are the executable unit of code function are usually defined inside a contract but they can also be defined outside of  contracts
+
+'''
+
+pragma solidity ^0.6.0;
+
+contract simpleaction{
+    function bid() {
+
+    }
+}
+
+
+'''
+
+### function modifiers 
+
+Function modifiers can be used to amend the semantics of functions in a declarative way (see Function Modifiers in the contracts section).
+
+### pure
+ for functions: Disallows modification or access of state.
+
+### view
+ for functions: Disallows modification of state.
+
+### payable 
+for functions: Allows them to receive Ether together with a call.
+
+### constant
+ for state variables: Disallows assignment (except initialisation), does not occupy storage slot.
+
+### immutable
+ for state variables: Allows exactly one assignment at construction time and is constant afterwards. Is stored in code.
+
+### anonymous 
+for events: Does not store event signature as topic.
+
+### indexed
+ for event parameters: Stores the parameter as topic.
+
+### virtual 
+for functions and modifiers: Allows the function’s or modifier’s behaviour to be changed in derived contracts.
+
+### override
+: States that this function, modifier or public state variable changes the behaviour of a function or modifier in a base contract.
+
+
+## Storage and Memory Types in Solidity
+
+
+## Events
+
+Events are convenience interfaces with the EVM logging facilities.
+
+## Errors
+
+Errors allow you to define descriptive names and data for failure situations. Errors can be used in revert statements. In comparison to string descriptions, errors are much cheaper and allow you to encode additional data. You can use NatSpec to describe the error to the user.
+
+## Struct Types (like js object)
+
+
+Structs are custom defined types that can group several variables (see Structs in types section).
+
+
+'''
+
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.0 <0.9.0;
+
+contract blockchain {
+    struct Voter { 
+        uint FavoriteNo;
+        bool Yes/No;
+        address Address;
+        uint Number;
+    }
+}
+
+'''
+
+## Enum Types (like an array)
+Enums can be used to create custom types with a finite set of ‘constant values’ (see Enums in types section).
+
+
+'''
+
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.0 <0.9.0;
+
+contract Purchase {
+    enum State { Created, Locked, Inactive } // Enum
+}
+
+
+
+## Solidity first contract
+
+
+'''
+
+pragma solidity ^0.6.0;
+
+contract SimpleStorage {
+   
+    uint256 favoriteNumber;
+
+      function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+     }
+    
+    struct People {
+     uint256 name;
+     string class;
+    }
+
+    // People public person = People({name: 2, class: "hello"});
+
+     People[] public people;
+     mapping(string => uint256) public classToname;
+    // People[2] public person;
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public{
+        people.push(People(_favoriteNumber, _name));
+        classToname[_name] = _favoriteNumber;
+    }
+
+   //view = reading , pure = reading
+
+}
+
+'''
