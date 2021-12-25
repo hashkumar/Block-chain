@@ -202,64 +202,63 @@ Coinbase is a platform on which many applications are being built using our API.
 
 state varisble are variables whose values are permanently stored in contract storage.
 
-uint (unassigned integer)
-uint256
-int
-bool
-address
-string
-const
+1. uint (unassigned integer)
+2. uint256
+3. int
+4. bool
+5. address
+6. string
+7. const
 
 ### functions 
 
 function are the executable unit of code function are usually defined inside a contract but they can also be defined outside of  contracts
 
-'''
-
-pragma solidity ^0.6.0;
-
-contract simpleaction{
-    function bid() {
-
-    }
-}
 
 
-'''
+    pragma solidity ^0.6.0;
+
+
+    contract simpleaction{
+       function bid(){
+
+       }
+      }
+    
+     }
+
+
 
 ### function modifiers 
 
 Function modifiers can be used to amend the semantics of functions in a declarative way (see Function Modifiers in the contracts section).
 
-### pure
+1. pure
  for functions: Disallows modification or access of state.
 
-### view
+2. view
  for functions: Disallows modification of state.
 
-### payable 
+3. payable 
 for functions: Allows them to receive Ether together with a call.
 
-### constant
+4. constant
  for state variables: Disallows assignment (except initialisation), does not occupy storage slot.
 
-### immutable
+5. immutable
  for state variables: Allows exactly one assignment at construction time and is constant afterwards. Is stored in code.
 
-### anonymous 
+6. anonymous 
 for events: Does not store event signature as topic.
 
-### indexed
+7. indexed
  for event parameters: Stores the parameter as topic.
 
-### virtual 
+8. virtual 
 for functions and modifiers: Allows the function’s or modifier’s behaviour to be changed in derived contracts.
 
-### override
-: States that this function, modifier or public state variable changes the behaviour of a function or modifier in a base contract.
-
-
-## Storage and Memory Types in Solidity
+9. override
+ States that this function, modifier or public state variable changes the behaviour of a function or modifier in a base contract.
 
 
 ## Events
@@ -276,45 +275,42 @@ Errors allow you to define descriptive names and data for failure situations. Er
 Structs are custom defined types that can group several variables (see Structs in types section).
 
 
-'''
 
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.0 <0.9.0;
 
-contract blockchain {
-    struct Voter { 
+          // SPDX-License-Identifier: GPL-3.0
+           pragma solidity >=0.4.0 <0.9.0;
+
+        contract blockchain {
+        struct Voter { 
         uint FavoriteNo;
         bool Yes/No;
         address Address;
         uint Number;
     }
-}
-
-'''
+    }
 
 ## Enum Types (like an array)
 Enums can be used to create custom types with a finite set of ‘constant values’ (see Enums in types section).
 
 
-'''
-
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.0 <0.9.0;
-
-contract Purchase {
-    enum State { Created, Locked, Inactive } // Enum
-}
 
 
+     // SPDX-License-Identifier: GPL-3.0
+     pragma solidity >=0.4.0 <0.9.0;
+     
+     contract Purchase {
+         enum State { Created, Locked, Inactive } // Enum
+     }
 
-## Solidity first contract
 
 
-'''
+## Solidity first contract (remix)
 
-pragma solidity ^0.6.0;
+![](../images/smart-contract.png)
 
-contract SimpleStorage {
+    pragma solidity ^0.6.0;
+
+    contract SimpleStorage {
    
     uint256 favoriteNumber;
 
@@ -338,8 +334,7 @@ contract SimpleStorage {
         classToname[_name] = _favoriteNumber;
     }
 
-   //view = reading , pure = reading
+    //view = reading , pure = reading
 
-}
+    }
 
-'''
